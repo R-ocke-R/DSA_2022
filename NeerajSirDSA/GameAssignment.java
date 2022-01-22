@@ -49,7 +49,7 @@ public class GameAssignment implements ResultClass{
     //  think why we can't make this function static.
     public void addScore(Scanner sc) {
         try{
-            System.out.println("Please Enter the score points and name");
+            System.out.println("\nPlease Enter the score points and name");
         
             //  adding new object in sorted order
             int i=0;
@@ -61,7 +61,7 @@ public class GameAssignment implements ResultClass{
             list.add(i, obj);
             }
             catch(InputMismatchException o){
-                System.out.println("WRONG INPUTType.");
+                System.out.println("Wrong Input Type.");
             }
 
         //  for adding out of order
@@ -96,7 +96,7 @@ public class GameAssignment implements ResultClass{
 
     @Override
     public void deleteScore(Scanner sc) {
-        System.out.println("Enter the name of cheater");
+        System.out.println("\nEnter the name of cheater");
         String name=sc.next();
         for (Score d:list){
             if (d.name.equals(name)){
@@ -110,7 +110,7 @@ public class GameAssignment implements ResultClass{
 
     public static void printy() {
         if (list.isEmpty()){
-        System.out.println("START PLAYING NOW !");
+        System.out.println("START PLAYING NOW !\n");
         return;}
 
         //  IN ORDER TO A SORTED DISPLAY BASED ON POINTS, I CAN EITHER ENTER IN SORTED MODE, OR SORT THE LIST BEFORE PRINTING.
@@ -150,6 +150,7 @@ public class GameAssignment implements ResultClass{
                     case 5 -> ob.sortTheList();
                     default -> System.out.println("wrong choice");
                 }
+                System.out.println("\n---\n Enter new choice \n---\n");
                 ch=sc.nextInt();
                 
             }
