@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.xml.validation.Validator;
 public class Lecture6$DFS {
     ArrayList<ArrayList<Integer>> adjacencyList= new ArrayList<ArrayList<Integer>>();
     Lecture6$DFS(int n){
@@ -44,7 +42,6 @@ public class Lecture6$DFS {
             if(va[nod]==0){
                 dfsRecursive(nod, va);
             }
-            
         }
     }
 

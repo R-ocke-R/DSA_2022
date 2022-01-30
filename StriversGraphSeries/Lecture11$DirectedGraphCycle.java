@@ -55,7 +55,7 @@ public class Lecture11$DirectedGraphCycle {
             
         }
         backtracking[index]=0;
-        return false;
+        return false; 
     }
 
     public static void main(String[] args) {

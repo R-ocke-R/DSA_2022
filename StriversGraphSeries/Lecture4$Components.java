@@ -25,7 +25,8 @@ public class Lecture4$Components{
         // calculates the sum of component whose node is at index.
         // output tells all the nodes in the given component and the total sum of that component
         // ArrayList<Integer> queue= new ArrayList<Integer>();
-        Queue<Integer> queue= new LinkedList<Integer>();
+        // Queue<Integer> queue= new LinkedList<Integer>();
+        Queue<Integer> queue = new PriorityQueue<>();
 
         // queue is used to keep the current and next nodes in the given component.
         // adjacencyList.get(index);
