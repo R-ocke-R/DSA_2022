@@ -7,6 +7,9 @@ public class Array_Intro {
     int[] arr=null;
     // storing null to reference data type array
     // static means the variable is of dynamic scope. WRONG. statis makes it belong to the class and not the obj.
+
+    // also static with respect to size means size is fixed at compile time
+    
     // and hence i dont see a way to using static type here.
     Array_Intro(int size){
         arr= new int[size];
