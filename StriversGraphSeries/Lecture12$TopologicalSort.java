@@ -29,8 +29,8 @@ public class Lecture12$TopologicalSort {
     public static void main(String[] args) throws InterruptedException {
         dGraph dg= new dGraph();
 
-        Thread ob= new Thread();
-        ob.sleep(2000);
+        // Thread ob= new Thread();
+        Thread.sleep(2000);
 
         int[] va= new int[dg.n+1];
         for (int i = 1; i <= dg.n; i++) {
