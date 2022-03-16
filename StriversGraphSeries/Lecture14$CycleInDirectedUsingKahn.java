@@ -18,6 +18,8 @@ public class Lecture14$CycleInDirectedUsingKahn{
                 }
             }
             j++;
+            // where J is nothing but the length of 
+            // array topo which is storing the order.
         }
         if (j==indeg.length){
             System.out.println("Order Possible, Thus No Cycle");
