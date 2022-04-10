@@ -1,6 +1,4 @@
 // First Lab.
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 // array as a language level feature.
@@ -123,13 +121,13 @@ class four{
 //  store 10 student in array
 //  print the difference between minimum marks and maximum marks.
 class Student{
-    private String name;
+    // private String name;
     private int marks;
-    private int rollno;
+    // private int rollno;
     Student(String n, int m, int r){
-        name=n;
+        // name=n;
         marks=m;
-        rollno=r;
+        // rollno=r;
     }
     public int getMarks(){
         return marks;
