@@ -136,6 +136,7 @@ public class BSTbyLinkedList {
 
         }
         System.out.print(root.data+"   ");
+        // if(root.data>x)
         traverse(root.right);
         traverse(root.left);
         // find the index of the node in the tree and sum
@@ -208,12 +209,23 @@ public class BSTbyLinkedList {
 
     }
     
+    // public static void 
     public static void main(String[] args) {
         // int arr[]={30, 20, 25, 40, 45, 35, 10};
-        int arr[]= {30, 20, 50, 25, 35, 40, 10};
+        try(Scanner sc = new Scanner(System.in)){
+            System.out.println("Enter the size of your tree");
+            int n= sc.nextInt();
+            System.out.println("Enter the n nodes");
+            int[] arr= new int[n];
+            for (int index = 0; index < n; index++) {
+                arr[index]=sc.nextInt();
+            }
+        // int arr[]= {30, 20, 50, 25, 35, 40, 10};
         for (int i = 0; i < arr.length; i++) {
             insertRecursion(arr[i]);
         }
+    
+
         counter(root);
         System.out.println("size of the tree is "+ size);
         size=0;
@@ -224,6 +236,8 @@ public class BSTbyLinkedList {
         replaceWhileTraversing(root);
         traverse(root);
         
+
+    }
         
 
 
