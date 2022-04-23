@@ -9,7 +9,7 @@ public class Lecture3$Implementation {
         //  in directed graph only u v is a connection this adj[v][u] != 1;
         int adj[][]=new int[n+1][n+1];
         int u, v;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<m;i++){
             u=sc.nextInt();
             v=sc.nextInt();
             adj[u][v]=1;
