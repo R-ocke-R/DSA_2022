@@ -55,8 +55,19 @@ public class Lecture6$DFS {
             for (int i = 1; i <= n; i++) {
                 if (visitedArray[i]==0){
                     obj.dfsRecursive(i, visitedArray);
+                    // obj.dfs(i, visitedArray);
                 }
             }
         }
     }
 }
+// no of nodes, edges.
+// 9 10 
+// edges 
+// 1 2 1 4 1 9 2 1 2 8 3 4 3 6 3 
+// 8 4 1 4 3 4 5 5 4 5 9 6 3 6 7 
+// 7 6 8 2 8 3 9 1 9 5  these are not the edges, these are neighbours for all. i.e. full adj
+
+// DFS=1 -> 2 -> 8 -> 3 -> 6 -> 7 -> 4 -> 5 -> 9 ->
+// DFS=0 1 7 2 5 6 3 4 8
+

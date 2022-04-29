@@ -34,7 +34,6 @@ public class Lecture18$MinimumSpanningTree {
         System.out.println(Arrays.toString(edgeCost));
         return sum;   
     }
-
     public static int pathCorrected(ArrayList<ArrayList<pairr>> adj, int src, int[] va, int[] cost, int sum){
         
         // Opmitizing the error in the above attempt.
@@ -67,7 +66,6 @@ public class Lecture18$MinimumSpanningTree {
         // failed in a big test case, so I couldn't really figure out the mistake
 
     }
-
     public static int pathStriver(ArrayList<ArrayList<pairr>> adj, int n){
         int key[]= new int [n];
         int parent[]= new int[n];
@@ -101,8 +99,7 @@ public class Lecture18$MinimumSpanningTree {
         }
         return sum;
 
-    }
-    
+    }  
     public static int pathPepcoding(ArrayList<ArrayList<pairr>> adj, int n){
         return -1;
         // will implement this in nxt revision iteration
@@ -131,3 +128,28 @@ public class Lecture18$MinimumSpanningTree {
 // outline: path function I used the total weight thing 
 // path corrected I used the other, even utilied the parent thing there, 
 // even then the function failed, now making new function 26/3
+
+
+
+/*
+single source shortest path ki algorithm is different from this.
+// Neeraj sir, 25/4
+V^V-2 is the number of minimum spanning trees possible in a fully connected graph.
+
+Kruskal's algo. 
+greedy, sort the edges in terms of thier weight now make a graph out of it.
+
+
+26/4 
+prims algorithm, used to find minimum spanning tree.
+prims generates the mst in connected way unlike in kruskal's where the results are 
+generated in disconnected order.
+
+
+
+
+
+
+
+
+*/

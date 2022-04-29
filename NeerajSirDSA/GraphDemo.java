@@ -40,7 +40,7 @@ List.
 Map -> Interface.
 
 */
-public class Graph {
+public class GraphDemo {
     public static void main(String[] args) {
         Map<Integer, Integer> obj= new HashMap<>();
         obj.put(20, 200);
@@ -58,24 +58,3 @@ public class Graph {
     }
 }
 // Spanning Tree.
-
-/*
-by removing all the superfluous edges you can make a spanning tree from a graph
-
-
-19/4
-
-Graph Traversal techniques
-There are two Graph Traversal techniques, BFS, DFS.
-
-BFS-> Queue
-DFS-> Stack.
-
-Single Source Shortest Path
-
-
-BFS, 
-Bellman Ford Algorithm
-Dijkstra's Algorithm
-
-*/

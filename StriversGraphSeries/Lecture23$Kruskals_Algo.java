@@ -42,6 +42,11 @@ public class Lecture23$Kruskals_Algo {
     public static void main(String[] args) {
         // storing the graph in an Arraylist< Node> 
         ArrayList<Nodethree>ad= new ArrayList<>() ;
+        try(Scanner sc= new Scanner(System.in)){
+            System.out.println("Enter the number of vertices");
+
+
+        }
         ad.add(new Nodethree(0 , 1, 2));
         ad.add(new Nodethree(0 , 3, 6));
         ad.add(new Nodethree(1 , 3, 8));
