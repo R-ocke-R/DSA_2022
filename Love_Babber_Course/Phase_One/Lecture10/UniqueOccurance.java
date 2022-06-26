@@ -46,7 +46,7 @@ import java.util.*;
 // //         count.put(a, 1 + count.getOrDefault(a, 0));
 // //     return count.size() == new HashSet<>(count.values()).size();
 // // }
-class Solution {
+class UniqueOccurance {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> n= new ArrayList<>();
         // List<Integer> n1= new LinkedList<>();
