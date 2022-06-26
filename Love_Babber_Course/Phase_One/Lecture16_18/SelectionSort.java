@@ -1,4 +1,4 @@
-package Lecture16;
+package Lecture16_18;
 
 public class SelectionSort {
     
