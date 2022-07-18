@@ -1,9 +1,6 @@
 package Lecture23;
 
-import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Two_d_Array {
@@ -79,7 +76,7 @@ public class Two_d_Array {
         int count=0;
         int total=row*col;
 
-        List<Integer> ans= new ArrayList<Integer>();
+        // List<Integer> ans= new ArrayList<Integer>();
 
         int firstRow=0;
         int firstCol=0;
@@ -90,7 +87,7 @@ public class Two_d_Array {
         while(count < total){
             for (int index = firstCol; count<total && index <= lastCol; index++) {
                 System.out.print(arr[firstRow][index]+" ");
-                ans.
+                // ans.
                 count++;
             }
             firstRow++;
@@ -148,12 +145,12 @@ public class Two_d_Array {
     }
     public static void rotateNinety(int[][] arr){
         int n=arr.length;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int temp=arr[i][j];
+        // for (int i = 0; i < n; i++) {
+        //     for (int j = 0; j < n; j++) {
+        //         int temp=arr[i][j];
   
-            }
-        }
+        //     }
+        // }
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
 
@@ -164,7 +161,7 @@ public class Two_d_Array {
             }
         }
         print(arr);
-        int n=arr.length;
+        // int n=arr.length;
         for (int i = 0; i < arr.length/2; i++) {
             for (int j = 0; j < arr.length; j++) {
                 int temp=arr[i][j];
@@ -242,5 +239,4 @@ public class Two_d_Array {
         
         // System.out.println(BinarySearch(arr, 1));
     }
-    
 }
