@@ -63,7 +63,7 @@ class Main1
                 }
                 System.out.println("Input Array Locations");
                 System.out.println(Arrays.toString(arr));
-                Arrays.sort(arr);//this is crucial. //log n
+                Arrays.sort(arr);//this is crucial. //nlog n
                 System.out.println(cows(arr, n, c));
             }
         }
