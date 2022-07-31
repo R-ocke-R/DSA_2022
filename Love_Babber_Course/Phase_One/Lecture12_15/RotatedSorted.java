@@ -1,6 +1,10 @@
 package Lecture12_15;
 
 public class RotatedSorted {
+    public static void main(String[] args) {
+        int[] arr= {3, 1};
+        System.out.println(Solution.search(arr, 1));
+    }
     
 }
 class Solution {
