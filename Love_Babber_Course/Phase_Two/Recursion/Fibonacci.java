@@ -1,5 +1,6 @@
 package Phase_Two.Recursion;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 class Fibonacci{
@@ -27,13 +28,23 @@ class Fibonacci{
         }    
         return c;
     }
+    public static int[] fibo(int n){
+        int[] arr= new int[n+1];
+        arr[0]=0;
+        arr[1]=1;
+        for (int i = 2; i <= n; i++) {
+            arr[i]=arr[i-1]+arr[i-2];
+
+        }    
+        return arr;
+    }
     
     public static void main(String[] args) {
 
         // Custom input
         try(Scanner sc= new Scanner(System.in)){
             int n=sc.nextInt();
-            System.out.println(FiboIterative(n));
+            System.out.println(Arrays.toString(fibo(n)));
         }
 
         //printing a range to check
