@@ -90,6 +90,26 @@ public class _44_LinkedList{
 
     }
     
+    public void delelePosition(int pos) {
+        if(pos<1 || pos>length()) return ;
+        if(pos==1){
+            head=head.next;
+            return;
+        }
+        // 1 based indexing.
+        int count=1;
+        ListNode temp= head;
+        while(count!=pos-1){
+            temp=temp.next;
+            count++;
+        }
+        temp.next=temp.next.next;
+        //condition to push back tail pointer when deleted element is the last.
+        if(temp.next==null){
+            tail=temp;
+        }
+        return;
+    }
     public static void main(String[] args){
         // _44_LinkedList sll= new _44_LinkedList();
         // sll.head=new ListNode(1);
@@ -126,6 +146,12 @@ public class _44_LinkedList{
         list.insertPosition(35, 4);
         list.insertPosition(80, 9);
         System.out.println(list.length());
+        list.printy();
+        
+        System.out.println("Now Deleting");
+        list.delelePosition(5);
+        list.printy();
+        list.delelePosition(8);
         list.printy();
         System.out.println(list.head.data);
         System.out.println(list.tail.data);
