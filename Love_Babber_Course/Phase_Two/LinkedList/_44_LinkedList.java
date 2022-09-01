@@ -57,7 +57,8 @@ public class _44_LinkedList{
         ListNode newN= new ListNode(value);
         tail.next=newN;
         tail=tail.next;
-
+        //logic without tail, travesal with head.next!=null when this condition will be reached we would have reached 
+        //the last node, then you have to simply attach the new node to it.
     }
 
     public void insertPosition(int value, int pos){
@@ -92,6 +93,7 @@ public class _44_LinkedList{
     
     public void delelePosition(int pos) {
         if(pos<1 || pos>length()) return ;
+        //deleting form empty list.
         if(pos==1){
             head=head.next;
             return;
