@@ -1,6 +1,5 @@
 package Phase_Two.LinkedList;
 
-import javax.print.attribute.standard.RequestingUserName;
 
 // Circular (Singly) LL is nothing but LL with the last node's pointing to the head;
 // this is done for higher applications like system links in OS, using any node we can 
@@ -76,12 +75,8 @@ public class _44_CircularLL {
         }
         if(temp.next==tail) tail=temp;
         temp.next=temp.next.next;
-        
-
     }
     
-    
-
 
     public static void main(String[] args) {
         _44_CircularLL clist= new _44_CircularLL();
@@ -90,14 +85,14 @@ public class _44_CircularLL {
         // clist.insert(40);
         // clist.printy();
 
-        // clist.insert(20, 30);
-        // clist.insert(30, 40);
-        // clist.insert(40, 50);
-        // // clist.printy();
-
-        // clist.insert(20, 25);
-        // clist.insert(40, 45);
+        clist.insert(20, 30);
+        clist.insert(30, 40);
+        clist.insert(40, 50);
         // clist.printy();
+
+        clist.insert(20, 25);
+        clist.insert(40, 45);
+        clist.printy();
 
         clist.deleteValue(20);
         clist.printy();
